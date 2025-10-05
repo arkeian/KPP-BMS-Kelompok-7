@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/milker" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --background: #c6252d;
+            --text: #e9ecef;
+            --accent-2: #f8f9fa;
+            --accent-3: #000000;
+            --font-size: 18px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--background);
+            color: var(--text);
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--background)] text-[var(--text)]">
+    <header
+        class="sticky top-0 z-50 bg-[var(--accent-3)] shadow-md rounded-b-2xl px-6 h-20 flex items-center justify-between">
+        <div class="text-xl font-extrabold text-[var(--text)] whitespace-nowrap">
+            BMS Kelompok 7
+        </div>
+
+        <!-- mobile toggle button -->
+        <input type="checkbox" id="nav-toggle" class="hidden peer" />
+        <label for="nav-toggle" class="text-2xl cursor-pointer text-[var(--accent-3)] md:hidden">
+            ☰
+        </label>
+
+        <!-- navigation -->
+        <nav
+            class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-2 md:gap-3 absolute md:static top-20 right-4 md:right-0 transition-all duration-300 ease-in-out">
+            <a href="index.html"
+                class="block px-3 py-1 text-sm font-semibold text-[var(--accent-2)] rounded-lg hover:bg-[var(--accent-2)] hover:text-[var(--accent-3)]">
+                Home
+            </a>
+            <a href="portofolio.html" aria-current="page"
+                class="block px-3 py-1 text-sm font-semibold text-[var(--accent-2)] rounded-lg hover:bg-[var(--accent-2)] hover:text-[var(--accent-3)] aria-[current=page]:bg-[var(--accent-2)] aria-[current=page]:text-[var(--accent-3)]">
+                Portofolio
+            </a>
+            <a href="contributor.html"
+                class="block px-3 py-1 text-sm font-semibold text-[var(--accent-2)] rounded-lg hover:bg-[var(--accent-2)] hover:text-[var(--accent-3)]">
+                Contributor
+            </a>
+        </nav>
+    </header>
+    <section class="grid grid-cols-1 gap-6 mx-6 my-6 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+        <!-- Card -->
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+
+        <!-- Row 2 -->
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+        <div
+            class="bg-[var(--accent-3)] rounded-2xl relative overflow-hidden shadow-md h-80 w-56 sm:rounded-xl md:rounded-xl">
+        </div>
+    </section>
+</body>
